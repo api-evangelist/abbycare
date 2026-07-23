@@ -1,7 +1,24 @@
 aid: abbycare
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/abbycare.png
 name: Abbycare
-description: Abbycare is a company surfaced as a portfolio company of khosla-ventures and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: 'Abby Care (Wellspring Care Inc.) is a family caregiving platform that helps families deliver
+  professional care at home and get paid for it. It provides no-cost caregiver certification and CNA
+  training, employment, payroll and Medicaid enrollment support, and an AI-assisted care-management
+  platform (AbbyOS / AbbyAid) for real-time care documentation and insights. Backed by Khosla Ventures.
+  The company operates a public marketing website but publishes no public developer API, developer
+  portal, or API documentation; this profile captures the identity and domain-security posture that
+  could be verified from public sources.'
 url: https://raw.githubusercontent.com/api-evangelist/abbycare/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-17T12:00:00Z'
 tags:
 - Company
+- Healthcare
+- Caregiving
+- Home Care
+- Medicaid
+- Health Tech
+- Artificial Intelligence
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +44,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/abbycare-domain-security.yml
 - type: Website
   url: https://www.abbycare.org/
+- type: TermsOfService
+  url: https://www.abbycare.org/terms-of-use
+- type: PrivacyPolicy
+  url: https://www.abbycare.org/privacy
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
